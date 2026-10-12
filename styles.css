@@ -125,4 +125,4 @@ body{background-color:#fff9f0;background-image:linear-gradient(135deg,#fff8ed 0%
 @media(max-width:1050px){.banner-copy .banner-purpose{font-size:20px}}
 @media(max-width:760px){.banner-copy .banner-purpose{font-size:19px;margin-top:14px}.banner-copy .banner-details{font-size:17px;margin-top:8px}}
 /* Make the divider consistently visible beside every award heading. */
-.award-group>h2:after{height:2px!important;background:#c7a17f!important;opacity:1!important}
+.award-group>h2:after{height:1px!important;background:#d2c2b3!important;opacity:1!important}
