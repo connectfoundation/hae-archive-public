@@ -42,7 +42,7 @@ body{background-color:#fbe6ce;background-image:url("hae-pastel-background.png");
 .archive-banner{background-image:linear-gradient(115deg,rgba(255,246,232,.98),rgba(255,211,167,.94) 62%,rgba(218,236,251,.93));background-size:cover;background-position:center}
 .award-group:first-child .card{background:linear-gradient(115deg,rgba(255,255,255,.9),rgba(255,242,226,.82))}
 .detail-heading{background-image:linear-gradient(115deg,#fff4e4,#ffd7ae 65%,#e1eff9)}
-a:focus-visible{outline-color:#d3662c}.award-group>h2:after{background:linear-gradient(90deg,rgba(134,91,52,.34),rgba(134,91,52,.08))}.card:hover{box-shadow:0 22px 40px -24px rgba(132,84,43,.25)}
+a:focus-visible{outline-color:#d3662c}.award-group>h2:after{background:linear-gradient(90deg,rgba(134,91,52,.23),rgba(134,91,52,.03))}.card:hover{box-shadow:0 22px 40px -24px rgba(132,84,43,.25)}
 
 /* Light page gradient; supplied spring artwork belongs in the banner. */
 body{background-color:#fff9f0;background-image:linear-gradient(135deg,#fff8ed 0%,#fff0df 42%,#eff6fc 82%,#f7fafc 100%);background-size:cover;background-position:center;background-attachment:fixed}
@@ -96,7 +96,15 @@ body{background-color:#fff9f0;background-image:linear-gradient(135deg,#fff8ed 0%
 
 /* Keep the service action alongside the title without a separate footer row. */
 .detail-title-row{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:10px}.detail-title-row h1{flex:1;min-width:0;margin:0;overflow-wrap:anywhere;word-break:keep-all}.detail-title-row .heading-actions{margin:0;flex-shrink:0}.detail-title-row .experience-trigger{font-size:16px;min-height:44px;padding:10px 16px;gap:18px}.detail-heading:has(.detail-title-row) .solution-title{margin-top:18px}.detail-title-row .experience-trigger{width:auto}@media(max-width:640px){.detail-title-row{gap:16px;flex-wrap:wrap}.detail-title-row h1{flex-basis:100%}.detail-title-row .heading-actions{margin-top:0}.detail-title-row .experience-trigger{font-size:15px;min-height:40px;padding:8px 14px}.detail-heading:has(.detail-title-row) .solution-title{margin-top:14px}}
-
+.security-intro{margin:0 0 24px!important;color:#5c665e!important}
+.security-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.security-card{display:flex;flex-direction:column;min-width:0;padding:22px;background:rgba(255,255,255,.72);border:1px solid #eee4da;border-radius:14px}
+.security-index{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:#fff0e3;color:#d45422;font-size:13px;font-weight:800}
+.security-card h3{margin:14px 0 8px!important;color:#29342f!important;font-size:19px!important;line-height:1.5!important}
+.security-card p{font-size:18px!important;line-height:1.8!important}
+.security-evidence{display:block;margin-top:18px;padding-top:14px;border-top:1px solid #f0e7de;color:#bd532a;font-size:15px;line-height:1.55;word-break:keep-all}
+.security-note{margin-top:20px!important;padding-top:16px;border-top:1px solid #ece8e1;color:#7a817a!important;font-size:14px!important;line-height:1.75!important}
+@media(max-width:760px){.security-grid{grid-template-columns:1fr}.security-card{padding:20px}.security-card h3{margin-top:12px!important}.security-card p{font-size:17px!important}.security-evidence{margin-top:14px}}
 
 /* Footer contact and content attribution */
 .site-footer{border-top:1px solid rgba(134,111,83,.16);background:rgba(255,255,255,.56);padding:28px 24px 36px;color:#6f756e}
@@ -106,23 +114,4 @@ body{background-color:#fff9f0;background-image:linear-gradient(135deg,#fff8ed 0%
 .footer-contact strong{color:#344239;font-size:15px}
 .footer-contact a{color:#bd4f24;text-decoration:underline;text-underline-offset:3px}
 .footer-contact a:hover{color:#a13f1b}
-.combined-logo{width:360px;text-decoration:none}
-
-@media(max-width:640px){.footer-inner{flex-direction:column;gap:16px}.footer-contact{white-space:normal}.combined-logo{width:min(360px,100%)}}
-/* Separate click targets for each part of the supplied combined logo. */
-.combined-logo{position:relative}
-.combined-logo a{position:absolute;top:0;bottom:0;border-radius:2px}
-.combined-logo .foundation-area{left:0;width:56.4%}
-.combined-logo .hae-area{left:56.4%;right:0}
-.combined-logo a:focus-visible{outline:2px solid #1677ff;outline-offset:2px}
-/* Keep the award beside the title to reduce empty space in the detail header. */
-.detail-title-row{justify-content:flex-start;align-items:center;gap:16px;margin-top:0;flex-wrap:wrap}
-.detail-title-row h1{flex:0 1 auto;min-width:0;margin:0}
-.detail-title-row .award-label{display:inline-flex;align-items:center;gap:8px;flex:0 0 auto;margin:0;font-size:16px;white-space:nowrap;color:#b94a1e}
-.detail-title-row .award-label .award-icon{width:24px;height:24px}
-.banner-copy .banner-purpose{font-size:22px;font-weight:700;line-height:1.65;letter-spacing:-.5px;margin:22px 0 0;color:#28342e}
-.banner-copy .banner-details{margin-top:12px;font-size:18px;color:#536057}
-@media(max-width:1050px){.banner-copy .banner-purpose{font-size:20px}}
-@media(max-width:760px){.banner-copy .banner-purpose{font-size:19px;margin-top:14px}.banner-copy .banner-details{font-size:17px;margin-top:8px}}
-/* Make the divider consistently visible beside every award heading. */
-.award-group>h2:after{height:1px!important;background:#d2c2b3!important;opacity:1!important}
+@media(max-width:640px){.footer-inner{flex-direction:column;gap:16px}.footer-contact{white-space:normal}}
