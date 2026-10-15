@@ -1253,7 +1253,7 @@
     "institutionUrl": "https://www.isyncc.or.kr/",
     "githubUrl": "https://github.com/aihae2026/aihae_final21",
     "serviceUrl": "https://today.connectnai.com/mvp",
-    "videoUrl": null,
+    "videoUrl": "videos/aihae_final21.mp4",
     "intro": "연희노인복지관의 AI 챌린지 해 수상 프로젝트입니다",
     "problem": "강사가 종이에 출석을 표시하면 담당자가 엑셀에 다시 입력하고, 결석 확인과 연락은 한 직원의 기억에 의존했습니다. 수업별로 기록이 나뉘어 같은 어르신이 여러 수업에 빠져도 확인하기 어렵고, 누가 연락했는지도 남지 않았습니다",
     "approach": "",
